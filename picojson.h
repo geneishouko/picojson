@@ -586,14 +586,14 @@ template <typename Iter> void value::_serialize(Iter oi, int indent) const {
         *oi++ = ',';
       }
       if (indent != -1) {
-        _indent(oi, indent);
+        //_indent(oi, indent);
       }
       i->_serialize(oi, indent);
     }
     if (indent != -1) {
       --indent;
       if (!u_.array_->empty()) {
-        _indent(oi, indent);
+        //_indent(oi, indent);
       }
     }
     *oi++ = ']';
